@@ -14,6 +14,7 @@ const figmaAssetPlugin = {
 }
 
 export default defineConfig({
+  base: '/energie/',
   plugins: [
     figmaAssetPlugin,
     // The React and Tailwind plugins are both required for Make, even if
