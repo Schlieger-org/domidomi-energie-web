@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
+import logoBlack from "@/assets/logo-energie-black.png";
 
 interface HeaderProps {
   onOpenCalculator: () => void;
@@ -35,20 +36,11 @@ export function Header({ onOpenCalculator }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 shrink-0">
-          <div className="flex items-center">
-            <span
-              className="text-[#111928] tracking-tight"
-              style={{ fontFamily: "'Open Sans', sans-serif", fontWeight: 700, fontSize: "20px" }}
-            >
-              DOMIDOMI
-            </span>
-            <span
-              className="ml-1"
-              style={{ fontFamily: "'Open Sans', sans-serif", fontWeight: 700, fontSize: "20px", color: "#E30A1A" }}
-            >
-              Energie
-            </span>
-          </div>
+          <img
+            src={logoBlack}
+            alt="DOMIDOMI Energie"
+            className="h-8 md:h-9 w-auto"
+          />
         </a>
 
         {/* Desktop Nav */}

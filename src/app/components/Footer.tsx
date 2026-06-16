@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import logoWhite from "@/assets/logo-energie-white.png";
 
 interface FooterProps {
   onOpenCalculator?: () => void;
@@ -16,8 +17,7 @@ export function Footer({ onOpenCalculator }: FooterProps) {
           {/* Brand + kontakt */}
           <div>
             <div className="mb-3">
-              <span className="text-white" style={{ fontSize: "18px", fontWeight: 700 }}>DOMIDOMI</span>
-              <span className="text-[#E30A1A] ml-1" style={{ fontSize: "18px", fontWeight: 700 }}>Energie</span>
+              <img src={logoWhite} alt="DOMIDOMI Energie" className="h-8 w-auto" />
             </div>
             <p className="text-white/55 leading-relaxed mb-5" style={{ fontSize: "13px", maxWidth: "280px" }}>
               Zprostředkovatel výhodných fixovaných cen energií pro domácnosti, podnikatele a firmy.
